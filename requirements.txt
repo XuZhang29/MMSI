@@ -1,0 +1,17 @@
+# PyTorch and GPU support
+torch==2.0.1+cu118       # Adjust for your environment if using a different CUDA version
+torchvision==0.15.2+cu118
+torchaudio==2.0.2+cu118
+
+# Transformers and related tools
+transformers==4.31.0
+tokenizers==0.13.3       # Supports fast tokenization
+
+# Data processing
+numpy==1.23.5
+pandas==1.5.3
+scikit-learn==1.2.2      # For data processing and evaluation
+
+# Progress bar utility
+tqdm==4.66.1
+
