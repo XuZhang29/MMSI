@@ -97,5 +97,5 @@ if __name__ == "__main__":
     
     print(f"Training complete, results saved as {save_path}.")
     print('-' * 86)
-    print('Note: This run result is a test of 50 samples. Due to the limitation of platform GPU resources, it is impossible to test the full sample data. The accuracy of the small sample test result is low and not referenceable. The test data has been provided, see README.md for details.')
+    print('Note: This run result is a test of 50 samples. The accuracy of the small sample test result is low and not referenceable. See README.md for details.')
     
