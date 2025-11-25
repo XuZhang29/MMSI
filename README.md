@@ -21,17 +21,24 @@ Please ensure your environment meets the following requirements. You can install
 - **Progress Bar Utility**  
   - `tqdm==4.66.1`
 
-## Data Privacy and Preprocessing
+## Dataset and Preprocessing
 
-Due to the sensitive nature of the legal data, we do not provide the original dataset. Instead, we offer:
-1. A preprocessed dataset, encoded using the `bert-base-chinese` model, available as `IMLJP4train_encoded.pkl`. Ensure this file is correctly placed in the folder `/data/`.
-2. A sample dataset, `IMLJP_50.pkl`, containing 50 cases as an example for understanding the data preprocessing pipeline. You can replace it with your own dataset for custom experiments.
+An anonymized version of the dataset used in the paper is publicly available on Hugging Face:
 
-The data used in the paper comes from repeated experiments with multiple random splits. While results from a single run may vary, the overall conclusions remain consistent.
+- **Hugging Face dataset**: [SHerZH/IMLJP](https://huggingface.co/datasets/SHerZH/IMLJP)
 
-### Requesting Data
+Each example in the dataset (simplified) contains:
 
-If you require access to the dataset, please contact the corresponding author. Any data requests will undergo a strict review process, and the usage will be tightly controlled to ensure data security and ethical compliance.
+- `case_id`: internal case identifier
+- `FD`: fact description (事实摘要)
+- `CV`: court’s view / reasoning (裁判说理)
+- `judgment`: a dictionary mapping each defendant to structured labels, e.g.:
+
+  ```json
+  "judgment": {
+    "姜某某": {"guilt": "principal", "prison": 36, "probation": 36},
+    "姜某":   {"guilt": "accomplice", "prison": 6,  "probation": 12}
+  }
 
 ## Setup
 
