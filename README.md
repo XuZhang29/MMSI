@@ -1,6 +1,5 @@
-# Explainable Multidefendant Judgment Prediction Enhanced by Judicial Logic Based on Large Language Models
-
-This repository contains the implementation code for the paper **"Explainable Multidefendant Judgment Prediction Enhanced by Judicial Logic Based on Large Language Models"**. The code utilizes PyTorch, transformers, and other essential libraries to build and train the models.
+# Logic-Guided Multistage Inference for Explainable Multidefendant Judgment Prediction
+This repository contains the implementation code for the paper **"Logic-Guided Multistage Inference for Explainable Multidefendant Judgment Prediction"**. The code utilizes PyTorch, transformers, and other essential libraries to build and train the models.
 
 ## Requirements
 
